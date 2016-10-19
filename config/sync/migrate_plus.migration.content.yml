@@ -1,12 +1,18 @@
+uuid: 3376f03f-c30d-44cf-b657-a8dec0bb3fe8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: LeeQ0a1bYKQeqkcARTPbwwBr2q65_YXtUyt9VN4y21A
 id: content
-label: Content
+migration_tags: null
 migration_group: Custom
-migration_dependencies: {}
+label: Content
 source:
   plugin: json_source
-  path: http://boermans.val/content.json
+  path: 'http://boermans.val/content.json'
   headers:
-    Accept: 'application/json'
+    Accept: application/json
   identifier: nid
   identifierDepth: 2
   fields:
@@ -15,15 +21,13 @@ source:
     - body
     - created
     - updated
-destination:
-  plugin: entity:node
 process:
   type:
     plugin: default_value
     default_value: book
   title: title
-  'body/format': advanced_html
-  'body/value': body
+  body/format: advanced_html
+  body/value: body
   sticky:
     plugin: default_value
     default_value: 0
@@ -32,3 +36,6 @@ process:
   uid:
     plugin: default_value
     default_value: 1
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }
