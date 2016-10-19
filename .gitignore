@@ -23,4 +23,4 @@ docroot/sites/default/settings.local.php
 *.sql
 
 aliases.drushrc.php
-development.service.yml
+development.services.yml
