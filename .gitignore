@@ -21,3 +21,5 @@ docroot/sites/default/settings.local.php
 
 # db dumps
 *.sql
+
+aliases.drushrc.php
