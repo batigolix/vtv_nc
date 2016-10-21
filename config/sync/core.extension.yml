@@ -5,12 +5,11 @@ module:
   book: 0
   breakpoint: 0
   ckeditor: 0
-  color: 0
   comment: 0
   config: 0
   contact: 0
   contextual: 0
-  datetime: 0
+  ctools: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
@@ -18,8 +17,6 @@ module:
   field_ui: 0
   file: 0
   filter: 0
-  help: 0
-  history: 0
   image: 0
   link: 0
   menu_ui: 0
@@ -31,15 +28,13 @@ module:
   options: 0
   page_cache: 0
   path: 0
-  quickedit: 0
-  rdf: 0
-  search: 0
+  pathauto: 0
+  redirect: 0
   shortcut: 0
   system: 0
-  taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
-  tour: 0
   update: 0
   user: 0
   views_ui: 0

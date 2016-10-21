@@ -1,9 +1,9 @@
-uuid: 3376f03f-c30d-44cf-b657-a8dec0bb3fe8
+uuid: cdac519d-6da8-4748-bba8-3db9f9d49647
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: LeeQ0a1bYKQeqkcARTPbwwBr2q65_YXtUyt9VN4y21A
+  default_config_hash: B65Ads4S8wOpIyLuUWMAgJZsyX6cvzGcJYSoiNB_l-M
 id: content
 migration_tags: null
 migration_group: Custom
@@ -32,7 +32,7 @@ process:
     plugin: default_value
     default_value: 0
   created: created
-  updated: updated
+  updated: bijgewerkt
   uid:
     plugin: default_value
     default_value: 1

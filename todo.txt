@@ -1,0 +1,4 @@
+- assign content to webmaster user
+- webmaster role
+- wysiwyg profile advanced html
+

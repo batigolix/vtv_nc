@@ -4,7 +4,7 @@ migration_group: Custom
 migration_dependencies: {}
 source:
   plugin: json_source
-  path: http://boermans.val/content.json
+  path: http://svv8.val/books.json
   headers:
     Accept: 'application/json'
   identifier: nid
