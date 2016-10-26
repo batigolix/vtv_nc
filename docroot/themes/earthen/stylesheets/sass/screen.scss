@@ -1,0 +1,307 @@
+@import "bourbon/bourbon";
+@import "base/base";
+@import "partials/base";
+@import "grid-settings";
+@import "neat/neat";
+
+/* $Id: style.css,v 1.1 2009/05/15 07:28:05 agileware Exp $ */
+
+body {
+  @include linear-gradient(to bottom, #E9E5DD, #F7F5F3);
+}
+
+.layout-container {
+  background-image: url('../images/Page-BgGlare.png');
+  background-repeat: no-repeat;
+  //  background-color: #F7F5F3;
+
+}
+
+/** Region design **/
+
+main {
+  background: #FFF;
+}
+
+.footer {
+  background: #FFF;
+  padding: 1em 1em 0 1em;
+  .footer-inner {
+    background: #EDC9AF;
+    padding: 1em;
+    .block {
+      color: #534937;
+      background-color: #E9E5DD;
+      @include border-top-radius(5px);
+      @include border-bottom-radius(5px);
+      @include border-style(solid);
+      @include border-color($medium_gray);
+      @include border-width(1px);
+      padding: 0.5em;
+      font-size: 0.9em;
+      margin: 0.5em;
+      h2 {
+        font-size: 1em;
+        color: #000;
+        padding: 0.5em;
+      }
+      .block-content {
+        padding: 0.5em;
+      }
+    }
+  }
+}
+
+header {
+  background: #FFF;
+  padding: 1em 1em 0 1em;
+  padding: 1em;
+  .block {
+    .block-content {
+      padding: 0.5em;
+    }
+  }
+  .site-name-and-slogan {
+    font-style: oblique;
+    color: #9A360E;
+    padding-top: 1.3em;
+    .site-slogan {
+    }
+    .site-name {
+      font-size: 1.9em;
+      a {
+        color: #9A360E;
+      }
+    }
+  }
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0.5em;
+      overflow: hidden;
+      @include linear-gradient(to bottom, #B0A285, #9A8762);
+      li {
+        float: left;
+        a {
+          display: block;
+          text-align: center;
+          padding: 0.25em 0.5em;
+          margin: 0 0.25em 0 0;
+          text-decoration: none;
+          color: #000;
+          @include border-style(solid);
+          @include border-color(transparent);
+          @include border-width(1px);
+          &:hover, &.is-active {
+            color: #000;
+            @include border-top-radius(5px);
+            @include border-bottom-radius(5px);
+            @include border-color(DarkRed);
+            @include linear-gradient(to bottom, #FF681F, #FE4C40);
+          }
+        }
+        &.menu-item--active-trail {
+
+        }
+      }
+    }
+  }
+}
+
+.layout-content {
+  padding: 2em 0 2em 2em;
+}
+
+h1 {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 2em;
+  color: #9A360E;
+  a {
+    color: #9A360E;
+    &:link, &:visited, &:hover {
+      color: #9A360E;
+    }
+  }
+}
+
+h2 {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 1.6em;
+  color: #815432;
+  a {
+    color: #815432;
+    &:link, &:visited, &:hover {
+      color: #815432;
+    }
+  }
+}
+
+h3 {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 1.3em;
+  color: #8D7C5E;
+  a {
+    color: #8D7C5E;
+    &:link, &:visited, &:hover {
+      color: #8D7C5E;
+    }
+  }
+}
+
+h4 {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 1em;
+  color: #655943;
+  a {
+    color: #655943;
+    &:link, &:visited, &:hover {
+      color: #655943;
+    }
+  }
+}
+
+article {
+  ul {
+    color: #3D3629;
+    margin: 0;
+    padding: 1em 0;
+    li {
+      padding: 0 0 0 1em;
+      background-image: url('../images/BlockContentBullets.png');
+      background-repeat:no-repeat;
+      margin:0.5em 0 0.5em 0;
+      line-height:1em;
+    }
+  }
+}
+
+/* Sidebar blocks */
+
+.layout-sidebar-second {
+  .block {
+    @include border-top-radius(5px);
+    @include border-bottom-radius(5px);
+    background-color: #E9E5DD;
+    @include border-style(solid);
+    @include border-color($medium_gray);
+    @include border-width(1px);
+    padding: 0.5em;
+    font-size: 0.9em;
+    margin: 0.5em;
+    color: #534937;
+    h2 {
+      @include border-top-radius(5px);
+      @include border-bottom-radius(5px);
+      background-color: #E9E5DD;
+      @include border-style(solid);
+      @include border-color($medium_gray);
+      @include border-width(1px);
+      font-size: 1em;
+      font-weight: normal;
+      color: #000;
+      @include linear-gradient(to bottom, #FF681F, #FE4C40);
+      padding: 0 0.5em 0.5em 0.5em;
+      .header-icon {
+        background-image: url('../images/BlockHeaderIcon.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+        top: 4px;
+      }
+    }
+    .block-content {
+      padding: 0 0.5em 0 0.5em;
+    }
+    ul {
+      padding: 0 0 0 1.5em;
+      li {
+        list-style-image: url('../images/BlockContentBullets.png');
+        a {
+          color: #A3390F;
+          &:link, &:visited, &:hover {
+            color: #A3390F;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button {
+  a {
+    color: #FFF;
+    &:link, &:visited, &:hover {
+      color: #FFF;
+    }
+  }
+}
+
+/** Layout **/
+
+.layout-content {
+  @include span-columns(7);
+  @include media($tablet_wide) {
+    @include span-columns(6 of 8);
+  }
+  @include media($mobile) {
+    @include span-columns(4 of 4);
+  }
+}
+
+.layout-sidebar-second {
+  @include span-columns(3);
+  @include media($tablet_wide) {
+    @include span-columns(2 of 8);
+  }
+  @include media($tablet_narrow) {
+    @include span-columns(2 of 6);
+  }
+  @include media($mobile) {
+    @include span-columns(4 of 4);
+  }
+}
+
+main {
+  @include outer-container;
+  position: relative;
+}
+
+.footer {
+  @include outer-container;
+  position: relative;
+  .footer-inner {
+    .block {
+      width: 50%;
+      margin: 1em auto;
+      @include media($mobile) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+header {
+  @include outer-container;
+  .site-logo {
+    @include span-columns(2);
+    @include media($tablet_wide) {
+      @include span-columns(12 of 12);
+    }
+  }
+  .site-name-and-slogan {
+    padding-top: 1.3em;
+    @include span-columns(8);
+    @include media($tablet_wide) {
+      @include span-columns(12 of 12);
+    }
+    @include omega();
+  }
+  nav {
+    @include span-columns(10);
+
+  }
+}
