@@ -1,0 +1,22 @@
+uuid: 17719cc5-879d-4bb4-bcee-ffcf71ce77bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - earthen
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: earthen_messages
+theme: earthen
+region: content
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

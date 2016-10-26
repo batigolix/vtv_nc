@@ -1,0 +1,22 @@
+uuid: 3d0b630a-e5ef-462f-9c3c-e9aad86ab0f7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - earthen
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: earthen_local_tasks
+theme: earthen
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

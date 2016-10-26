@@ -11,6 +11,7 @@ module:
   contextual: 0
   ctools: 0
   dblog: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -47,5 +48,6 @@ theme:
   classy: 0
   bartik: 0
   seven: 0
+  earthen: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU

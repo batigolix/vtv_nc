@@ -1,0 +1,25 @@
+uuid: 7110b0b3-cb35-403e-90b1-dc5a7e6a6bdc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - earthen
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: earthen_branding
+theme: earthen
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

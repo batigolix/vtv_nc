@@ -1,0 +1,20 @@
+uuid: 43b7600c-81cb-453f-a672-d47b3367b333
+langcode: en
+status: true
+dependencies:
+  theme:
+    - earthen
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: earthen_page_title
+theme: earthen
+region: content
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

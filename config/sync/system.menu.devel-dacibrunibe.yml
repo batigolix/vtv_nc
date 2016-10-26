@@ -1,0 +1,8 @@
+uuid: 4a480506-e714-423a-98da-fa38366f6425
+langcode: en
+status: true
+dependencies: {  }
+id: devel-dacibrunibe
+label: dacibrunibe
+description: 'Description of dacibrunibe'
+locked: false

@@ -1,0 +1,8 @@
+uuid: e4663ced-97dd-40d3-892d-c8e90da04c2f
+langcode: en
+status: true
+dependencies: {  }
+id: devel-shusw
+label: shusw
+description: 'Description of shusw'
+locked: false
