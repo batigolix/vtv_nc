@@ -47,12 +47,18 @@ main {
       }
       .block-content {
         padding: 0.5em;
+        text-align: center;
+        ul {
+          text-align: left;
+        }
       }
     }
   }
 }
 
-header {
+/* Banner header design */
+
+.header {
   background: #FFF;
   padding: 1em 1em 0 1em;
   padding: 1em;
@@ -60,6 +66,9 @@ header {
     .block-content {
       padding: 0.5em;
     }
+  }
+  .site-logo {
+    padding: 0 0 1em 0;
   }
   .site-name-and-slogan {
     font-style: oblique;
@@ -161,6 +170,8 @@ h4 {
   }
 }
 
+/* Content style */
+
 article {
   ul {
     color: #3D3629;
@@ -169,9 +180,9 @@ article {
     li {
       padding: 0 0 0 1em;
       background-image: url('../images/BlockContentBullets.png');
-      background-repeat:no-repeat;
-      margin:0.5em 0 0.5em 0;
-      line-height:1em;
+      background-repeat: no-repeat;
+      margin: 0.5em 0 0.5em 0;
+      line-height: 1em;
     }
   }
 }
@@ -229,6 +240,27 @@ article {
       }
     }
   }
+  .sponsors {
+    h3 {
+      font-size: 1em;
+      margin: 0 0 1em 0;
+    }
+    .views-field-field-image {
+      img {
+        @include border-style(solid);
+        @include border-color($medium_gray);
+        @include border-width(1px);
+      }
+    }
+    .views-row {
+      @include border-style(solid);
+      @include border-color($medium_gray);
+      @include border-width(0 0 1px 0);
+      padding: 1em 0;
+
+
+    }
+  }
 }
 
 .button {
@@ -279,6 +311,18 @@ main {
       margin: 1em auto;
       @include media($mobile) {
         width: 100%;
+      }
+    }
+  }
+  ul {
+    padding: 0 0 0 1.5em;
+    li {
+      list-style-image: url('../images/BlockContentBullets.png');
+      a {
+        color: #A3390F;
+        &:link, &:visited, &:hover {
+          color: #A3390F;
+        }
       }
     }
   }

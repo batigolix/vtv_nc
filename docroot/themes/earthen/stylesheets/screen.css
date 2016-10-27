@@ -221,23 +221,29 @@ main {
         color: #000;
         padding: 0.5em; }
       .footer .footer-inner .block .block-content {
-        padding: 0.5em; }
+        padding: 0.5em;
+        text-align: center; }
+        .footer .footer-inner .block .block-content ul {
+          text-align: left; }
 
-header {
+/* Banner header design */
+.header {
   background: #FFF;
   padding: 1em 1em 0 1em;
   padding: 1em; }
-  header .block .block-content {
+  .header .block .block-content {
     padding: 0.5em; }
-  header .site-name-and-slogan {
+  .header .site-logo {
+    padding: 0 0 1em 0; }
+  .header .site-name-and-slogan {
     font-style: oblique;
     color: #9A360E;
     padding-top: 1.3em; }
-    header .site-name-and-slogan .site-name {
+    .header .site-name-and-slogan .site-name {
       font-size: 1.9em; }
-      header .site-name-and-slogan .site-name a {
+      .header .site-name-and-slogan .site-name a {
         color: #9A360E; }
-  header nav ul {
+  .header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0.5em;
@@ -245,9 +251,9 @@ header {
     background-color: #B0A285;
     background-image: -webkit-linear-gradient(top, #B0A285, #9A8762);
     background-image: linear-gradient(to bottom,#B0A285, #9A8762); }
-    header nav ul li {
+    .header nav ul li {
       float: left; }
-      header nav ul li a {
+      .header nav ul li a {
         display: block;
         text-align: center;
         padding: 0.25em 0.5em;
@@ -257,7 +263,7 @@ header {
         border-style: solid;
         border-color: transparent;
         border-width: 1px; }
-        header nav ul li a:hover, header nav ul li a.is-active {
+        .header nav ul li a:hover, .header nav ul li a.is-active {
           color: #000;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px;
@@ -307,6 +313,7 @@ h4 {
     h4 a:link, h4 a:visited, h4 a:hover {
       color: #655943; }
 
+/* Content style */
 article ul {
   color: #3D3629;
   margin: 0;
@@ -367,6 +374,18 @@ article ul {
         color: #A3390F; }
         .layout-sidebar-second .block ul li a:link, .layout-sidebar-second .block ul li a:visited, .layout-sidebar-second .block ul li a:hover {
           color: #A3390F; }
+.layout-sidebar-second .sponsors h3 {
+  font-size: 1em;
+  margin: 0 0 1em 0; }
+.layout-sidebar-second .sponsors .views-field-field-image img {
+  border-style: solid;
+  border-color: #999;
+  border-width: 1px; }
+.layout-sidebar-second .sponsors .views-row {
+  border-style: solid;
+  border-color: #999;
+  border-width: 0 0 1px;
+  padding: 1em 0; }
 
 .button a {
   color: #FFF; }
@@ -455,6 +474,14 @@ main {
     @media screen and (max-width: 746px) {
       .footer .footer-inner .block {
         width: 100%; } }
+  .footer ul {
+    padding: 0 0 0 1.5em; }
+    .footer ul li {
+      list-style-image: url("../images/BlockContentBullets.png"); }
+      .footer ul li a {
+        color: #A3390F; }
+        .footer ul li a:link, .footer ul li a:visited, .footer ul li a:hover {
+          color: #A3390F; }
 
 header {
   max-width: 1200px;

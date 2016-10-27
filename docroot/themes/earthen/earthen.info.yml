@@ -10,8 +10,6 @@ base theme: stable
 
 regions:
   header: Header
-  primary_menu: 'Primary menu'
-  secondary_menu: 'Secondary menu'
   help: Help
   content: Content
   sidebar_first: 'Sidebar first'
