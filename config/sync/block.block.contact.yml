@@ -1,0 +1,26 @@
+uuid: d0d6dc96-f0c6-4040-8a64-bdc2f53d2e12
+langcode: en
+status: true
+dependencies:
+  module:
+    - vtv_tools
+  theme:
+    - earthen
+id: contact
+theme: earthen
+region: footer
+weight: -8
+provider: null
+plugin: contact
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: visible
+  contact_markup_string: "Theater Frans Boermans<br>\nWilhelminastraat 1, 5941 GJ Velden - Telefoon : 077 472 2313<br>\nBankrekening : NL71RABO 017.38.92.132 - Kvk venlo : 12052238<br>\nE-mail : volkstheater.venlo@gmail.com - <a href=\"/contact\">Contact</a>"
+  cache:
+    max_age: 3600
+    contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+visibility: {  }

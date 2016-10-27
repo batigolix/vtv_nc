@@ -1,0 +1,18 @@
+uuid: 027f04b1-5c49-4465-8c7a-1d6a256f6bf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sponsor
+id: node.sponsor.title
+field_name: title
+entity_type: node
+bundle: sponsor
+label: Naam
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

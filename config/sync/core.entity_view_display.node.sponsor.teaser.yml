@@ -1,0 +1,21 @@
+uuid: eeeb7fce-ec7a-4a2a-827c-159d99c3fe3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sponsor.field_description
+    - field.field.node.sponsor.field_image
+    - node.type.sponsor
+  module:
+    - user
+id: node.sponsor.teaser
+targetEntityType: node
+bundle: sponsor
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_description: true
+  field_image: true
