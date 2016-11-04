@@ -238,7 +238,7 @@ main {
   .header .site-name-and-slogan {
     font-style: oblique;
     color: #9A360E;
-    padding-top: 1.3em; }
+    padding: 2em 0 0 0; }
     .header .site-name-and-slogan .site-name {
       font-size: 1.9em; }
       .header .site-name-and-slogan .site-name a {
@@ -400,7 +400,7 @@ article ul {
   width: 69.23077%; }
   .layout-content:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1024px) {
     .layout-content {
       float: left;
       display: block;
@@ -424,7 +424,7 @@ article ul {
   width: 28.20513%; }
   .layout-sidebar-second:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1024px) {
     .layout-sidebar-second {
       float: left;
       display: block;
@@ -450,7 +450,7 @@ article ul {
         margin-right: 0; } }
 
 main {
-  max-width: 1200px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   position: relative; }
@@ -460,7 +460,7 @@ main {
     display: table; }
 
 .footer {
-  max-width: 1200px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   position: relative; }
@@ -483,52 +483,52 @@ main {
         .footer ul li a:link, .footer ul li a:visited, .footer ul li a:hover {
           color: #A3390F; }
 
-header {
-  max-width: 1200px;
+.header {
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto; }
-  header::after {
+  .header::after {
     clear: both;
     content: "";
     display: table; }
-  header .site-logo {
+  .header .site-logo {
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 17.94872%; }
-    header .site-logo:last-child {
+    .header .site-logo:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 1200px) {
-      header .site-logo {
+    @media screen and (max-width: 1024px) {
+      .header .site-logo {
         float: left;
         display: block;
         margin-right: 2.12766%;
         width: 100%; }
-        header .site-logo:last-child {
+        .header .site-logo:last-child {
           margin-right: 0; } }
-  header .site-name-and-slogan {
+  .header .site-name-and-slogan {
     padding-top: 1.3em;
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 79.48718%;
     margin-right: 0; }
-    header .site-name-and-slogan:last-child {
+    .header .site-name-and-slogan:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 1200px) {
-      header .site-name-and-slogan {
+    @media screen and (max-width: 1024px) {
+      .header .site-name-and-slogan {
         float: left;
         display: block;
         margin-right: 2.12766%;
         width: 100%; }
-        header .site-name-and-slogan:last-child {
+        .header .site-name-and-slogan:last-child {
           margin-right: 0; } }
-  header nav {
+  .header nav {
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 100%; }
-    header nav:last-child {
+    .header nav:last-child {
       margin-right: 0; }
 
 /*# sourceMappingURL=screen.css.map */

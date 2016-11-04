@@ -73,7 +73,8 @@ main {
   .site-name-and-slogan {
     font-style: oblique;
     color: #9A360E;
-    padding-top: 1.3em;
+
+    padding: 2em 0 0 0;
     .site-slogan {
     }
     .site-name {
@@ -328,7 +329,7 @@ main {
   }
 }
 
-header {
+.header {
   @include outer-container;
   .site-logo {
     @include span-columns(2);
