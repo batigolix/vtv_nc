@@ -1,0 +1,21 @@
+uuid: eb8c162a-779c-4f80-9cb4-fdb351d0bbcd
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+  theme:
+    - earthen
+id: booknavigation
+theme: earthen
+region: sidebar_second
+weight: 0
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  provider: book
+  label_display: visible
+  block_mode: 'all pages'
+visibility: {  }
