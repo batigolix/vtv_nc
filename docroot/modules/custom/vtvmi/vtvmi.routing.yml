@@ -1,0 +1,17 @@
+
+# In order to to create pages it is necessary to define routes for them.
+# A route maps a URL path to a controller. It defines what function
+# or method will be called when a URL is accessed.
+# If the user accesses http://drupal8.dev//admin/vtvmi/import-book-structure, the routing
+# system will look for a route with that path. In this case it will find a
+# match, and execute the _controller callback. In this case the callback is
+# defined as a classname
+# ("\Drupal\vtvmi\Controller\ImportBookStructure")
+# and a method ("import_book_structure").
+vtvmi.import_book_structure_import_book_structure:
+  path: '/admin/vtvmi/import-book-structure'
+  defaults:
+    _controller: '\Drupal\vtvmi\Controller\ImportBookStructure::import_book_structure'
+    _title: 'Import book structure'
+  requirements:
+    _permission: 'access content'

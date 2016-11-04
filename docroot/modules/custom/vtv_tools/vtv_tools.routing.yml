@@ -1,0 +1,17 @@
+
+# In order to to create pages it is necessary to define routes for them.
+# A route maps a URL path to a controller. It defines what function
+# or method will be called when a URL is accessed.
+# If the user accesses http://drupal8.dev//admin/vtv_tools/add_books, the routing
+# system will look for a route with that path. In this case it will find a
+# match, and execute the _controller callback. In this case the callback is
+# defined as a classname
+# ("\Drupal\vtv_tools\Controller\AddBooks")
+# and a method ("add_books").
+vtv_tools.add_books_add_books:
+  path: '/admin/vtv_tools/add_books'
+  defaults:
+    _controller: '\Drupal\vtv_tools\Controller\AddBooks::add_books'
+    _title: 'Add books'
+  requirements:
+    _permission: 'access content'
