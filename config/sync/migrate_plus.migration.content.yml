@@ -1,5 +1,5 @@
 uuid: cdac519d-6da8-4748-bba8-3db9f9d49647
-langcode: en
+langcode: nl
 status: true
 dependencies: {  }
 _core:
@@ -20,11 +20,14 @@ source:
     - title
     - body
     - created
-    - updated
+    - changed
 process:
   type:
     plugin: default_value
     default_value: book
+  langcode:
+    plugin: default_value
+    default_value: nl
   title: title
   body/format:
     plugin: default_value
@@ -34,7 +37,7 @@ process:
     plugin: default_value
     default_value: 0
   created: created
-  updated: bijgewerkt
+  updated: changed
   uid:
     plugin: default_value
     default_value: 1

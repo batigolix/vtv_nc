@@ -31,4 +31,5 @@ content:
     type: image
   links:
     weight: 100
-hidden: {  }
+hidden:
+  langcode: true

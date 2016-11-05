@@ -1,5 +1,5 @@
 uuid: a473f199-3ed2-4814-beeb-a915b3983868
-langcode: en
+langcode: nl
 status: true
 dependencies:
   config:
@@ -47,3 +47,4 @@ content:
     weight: 100
 hidden:
   field_image: true
+  langcode: true

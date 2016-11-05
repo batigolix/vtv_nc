@@ -20,7 +20,9 @@ module:
   filter: 0
   image: 0
   kint: 0
+  language: 0
   link: 0
+  locale: 0
   menu_ui: 0
   migrate: 0
   migrate_plus: 0
@@ -53,3 +55,4 @@ theme:
   earthen: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
+langcode: nl

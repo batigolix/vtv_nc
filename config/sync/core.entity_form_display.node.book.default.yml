@@ -1,5 +1,5 @@
 uuid: cdfafb15-2aa0-4574-89c2-c1aa8945d778
-langcode: en
+langcode: nl
 status: true
 dependencies:
   config:
@@ -26,6 +26,11 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
     settings: {  }
     third_party_settings: {  }
   path:

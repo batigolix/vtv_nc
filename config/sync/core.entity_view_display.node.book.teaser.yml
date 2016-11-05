@@ -1,5 +1,5 @@
 uuid: 6d157547-42c3-401a-9fd5-ed2e70411944
-langcode: en
+langcode: nl
 status: true
 dependencies:
   config:
@@ -25,4 +25,5 @@ content:
     third_party_settings: {  }
   links:
     weight: 101
-hidden: {  }
+hidden:
+  langcode: true

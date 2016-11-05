@@ -1,5 +1,5 @@
 uuid: ff567165-e8a5-4400-a409-8e6c1dd18a45
-langcode: en
+langcode: nl
 status: true
 dependencies:
   config:
@@ -44,6 +44,11 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
