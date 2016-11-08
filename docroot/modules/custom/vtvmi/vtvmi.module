@@ -22,3 +22,14 @@ function vtvmi_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+// Fetches the local NID from the migration source desination mapping table.
+function _vtvmi_get_local_nid($nid) {
+  $result = \Drupal::database()->select('migrate_map_content', 'mmc')
+    ->fields('mmc', array('destid1'))
+    ->condition('mmc.sourceid1', $nid)
+    ->execute()->fetchField();
+  if ($result) {
+    return $result;
+  }
+}

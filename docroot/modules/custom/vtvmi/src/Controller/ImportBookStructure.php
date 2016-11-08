@@ -29,9 +29,9 @@ class ImportBookStructure extends ControllerBase {
       }
       else {
         foreach ($data as $datum) {
-          $nid = $this->get_local_nid($datum->nid);
-          $pid = $datum->pid > 0 ? $this->get_local_nid($datum->pid) : 0;
-          $bid = $this->get_local_nid($datum->bid);
+          $nid = _vtvmi_get_local_nid($datum->nid);
+          $pid = $datum->pid > 0 ? _vtvmi_get_local_nid($datum->pid) : 0;
+          $bid = _vtvmi_get_local_nid($datum->bid);
           if ($nid && $bid && $pid >= 0) {
             $query = \Drupal::database()->upsert('book');
             $query->fields([
@@ -58,15 +58,15 @@ class ImportBookStructure extends ControllerBase {
               $datum->has_children,
               $datum->weight,
               $datum->depth,
-              $datum->p1 > 0 ? $this->get_local_nid($datum->p1) : 0,
-              $datum->p2 > 0 ? $this->get_local_nid($datum->p2) : 0,
-              $datum->p3 > 0 ? $this->get_local_nid($datum->p3) : 0,
-              $datum->p4 > 0 ? $this->get_local_nid($datum->p4) : 0,
-              $datum->p5 > 0 ? $this->get_local_nid($datum->p5) : 0,
-              $datum->p6 > 0 ? $this->get_local_nid($datum->p6) : 0,
-              $datum->p7 > 0 ? $this->get_local_nid($datum->p7) : 0,
-              $datum->p8 > 0 ? $this->get_local_nid($datum->p8) : 0,
-              $datum->p9 > 0 ? $this->get_local_nid($datum->p9) : 0,
+              $datum->p1 > 0 ? _vtvmi_get_local_nid($datum->p1) : 0,
+              $datum->p2 > 0 ? _vtvmi_get_local_nid($datum->p2) : 0,
+              $datum->p3 > 0 ? _vtvmi_get_local_nid($datum->p3) : 0,
+              $datum->p4 > 0 ? _vtvmi_get_local_nid($datum->p4) : 0,
+              $datum->p5 > 0 ? _vtvmi_get_local_nid($datum->p5) : 0,
+              $datum->p6 > 0 ? _vtvmi_get_local_nid($datum->p6) : 0,
+              $datum->p7 > 0 ? _vtvmi_get_local_nid($datum->p7) : 0,
+              $datum->p8 > 0 ? _vtvmi_get_local_nid($datum->p8) : 0,
+              $datum->p9 > 0 ? _vtvmi_get_local_nid($datum->p9) : 0,
             ]);
             $query->key('nid');
             $query->execute();
@@ -82,17 +82,6 @@ class ImportBookStructure extends ControllerBase {
       '#type' => 'markup',
       '#markup' => $this->t('Implement method: import_book_structure')
     ];
-  }
-
-  // Fetches the local NID from the migration source desination mapping table.
-  public function get_local_nid($nid) {
-    $result = \Drupal::database()->select('migrate_map_content', 'mmc')
-      ->fields('mmc', array('destid1'))
-      ->condition('mmc.sourceid1', $nid)
-      ->execute()->fetchField();
-    if ($result) {
-      return $result;
-    }
   }
 
 }

@@ -15,3 +15,20 @@ vtvmi.import_book_structure_import_book_structure:
     _title: 'Import book structure'
   requirements:
     _permission: 'access content'
+
+# In order to to create pages it is necessary to define routes for them.
+# A route maps a URL path to a controller. It defines what function
+# or method will be called when a URL is accessed.
+# If the user accesses http://drupal8.dev//admin/vtvmi/convert-nids, the routing
+# system will look for a route with that path. In this case it will find a
+# match, and execute the _controller callback. In this case the callback is
+# defined as a classname
+# ("\Drupal\vtvmi\Controller\ConvertNids")
+# and a method ("convert_nids").
+vtvmi.convert_nids_convert_nids:
+  path: '/admin/vtvmi/convert-nids'
+  defaults:
+    _controller: '\Drupal\vtvmi\Controller\ConvertNids::convert_nids'
+    _title: 'Convert node IDs'
+  requirements:
+    _permission: 'access content'
