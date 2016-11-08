@@ -7,7 +7,7 @@ _core:
 id: content
 migration_tags: null
 migration_group: Custom
-label: Content
+label: Inhoud
 source:
   plugin: json_source
   path: 'http://boermans.val/content.json'

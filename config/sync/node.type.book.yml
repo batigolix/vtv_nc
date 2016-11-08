@@ -7,9 +7,9 @@ dependencies:
       - book
 _core:
   default_config_hash: 2gWGA-X4ERc4McStS7cMEG3ZBpDEqfNRDPTjB1v674Y
-name: 'Book page'
+name: Boekpagina
 type: book
-description: '<em>Books</em> have a built-in hierarchical navigation. Use for handbooks or tutorials.'
+description: '<em>Boeken</em> hebben een hiërarchische navigatie. Vaak gebruikt voor het aanmaken van handboeken of lesmateriaal.'
 help: ''
 new_revision: true
 preview_mode: 1

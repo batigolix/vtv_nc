@@ -13,7 +13,7 @@ id: node.book.body
 field_name: body
 entity_type: node
 bundle: book
-label: Body
+label: Inhoud
 description: ''
 required: false
 translatable: true
