@@ -531,4 +531,49 @@ main {
     .header nav:last-child {
       margin-right: 0; }
 
+/* book navigation under book content */
+.book-navigation {
+  border-top: 2px solid #FE4C40;
+  opacity: 0.9;
+  margin: 1em 0; }
+  .book-navigation .menu {
+    padding-bottom: 0;
+    padding-top: 1em; }
+  .book-navigation .book-pager {
+    margin: 0;
+    overflow: auto;
+    padding: 0.5em 0; }
+  .book-navigation .book-pager__item {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+    background: none; }
+  .book-navigation .book-pager__item--previous {
+    text-align: left;
+    width: 45%; }
+  .book-navigation .book-pager__item--center {
+    text-align: center;
+    width: 8%; }
+  .book-navigation .book-pager__item--next {
+    float: right;
+    text-align: right;
+    width: 45%; }
+
+.block-book-navigation ul.menu {
+  list-style: none outside;
+  margin-left: 1em;
+  padding: 0;
+  text-align: left; }
+  .block-book-navigation ul.menu a.is-active:hover, .block-book-navigation ul.menu a.is-active:active, .block-book-navigation ul.menu a.is-active:link, .block-book-navigation ul.menu a.is-active:visited {
+    color: #000; }
+  .block-book-navigation ul.menu li.menu-item--expanded {
+    list-style-image: url(../../../core/misc/menu-expanded.png);
+    list-style-type: circle; }
+  .block-book-navigation ul.menu .menu-item--collapsed {
+    list-style-image: url(../../../core/misc/menu-collapsed.png);
+    list-style-type: disc; }
+  .block-book-navigation ul.menu .menu-item {
+    padding-top: 0.2em;
+    margin: 0 0 0.2em 0; }
+
 /*# sourceMappingURL=screen.css.map */

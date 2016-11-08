@@ -350,3 +350,66 @@ main {
 
   }
 }
+
+
+/* book navigation under book content */
+
+.book-navigation {
+  border-top: 2px solid #FE4C40;
+  opacity: 0.9;
+  margin: 1em 0;
+  .menu {
+    padding-bottom: 0;
+    padding-top: 1em;
+  }
+  .book-pager {
+    margin: 0;
+    overflow: auto;
+    padding: 0.5em 0;
+  }
+  .book-pager__item {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+    background: none;
+  }
+  .book-pager__item--previous {
+    text-align: left;
+    width: 45%;
+  }
+  .book-pager__item--center {
+    text-align: center;
+    width: 8%;
+  }
+  .book-pager__item--next {
+    float: right;
+    text-align: right;
+    width: 45%;
+  }
+}
+
+.block-book-navigation {
+  ul.menu {
+    list-style: none outside;
+    margin-left: 1em;
+    padding: 0;
+    text-align: left;
+    a.is-active {
+      &:hover, &:active, &:link, &:visited {
+        color: #000;
+      }
+    }
+    li.menu-item--expanded {
+      list-style-image: url(../../../core/misc/menu-expanded.png);
+      list-style-type: circle;
+    }
+    .menu-item--collapsed {
+      list-style-image: url(../../../core/misc/menu-collapsed.png);
+      list-style-type: disc;
+    }
+    .menu-item {
+      padding-top: 0.2em;
+      margin: 0 0 0.2em 0;
+    }
+  }
+}
