@@ -1,5 +1,5 @@
-uuid: 56610eca-22c2-40a9-b611-c8a06f9105be
-langcode: en
+uuid: e7d3a741-04ab-4fd0-8030-0b7b13e10f57
+langcode: nl
 status: true
 dependencies:
   config:
@@ -8,19 +8,17 @@ dependencies:
     - system
   theme:
     - earthen
-_core:
-  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: earthen_main_menu
+id: hoofdnavigatie
 theme: earthen
-region: sidebar_second
-weight: -4
+region: header
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: Hoofdnavigatie
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 0
 visibility: {  }

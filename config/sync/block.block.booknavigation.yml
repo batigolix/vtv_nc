@@ -9,12 +9,12 @@ dependencies:
 id: booknavigation
 theme: earthen
 region: sidebar_second
-weight: 0
+weight: -5
 provider: null
 plugin: book_navigation
 settings:
   id: book_navigation
-  label: 'Book navigation'
+  label: Inhoud
   provider: book
   label_display: visible
   block_mode: 'all pages'
