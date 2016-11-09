@@ -33,3 +33,4 @@ function _vtvmi_get_local_nid($nid) {
     return $result;
   }
 }
+

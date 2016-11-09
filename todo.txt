@@ -1,8 +1,8 @@
 - assign content to webmaster user
-- webmaster role
-- wysiwyg profile advanced html
+#- webmaster role
+#- wysiwyg profile advanced html
 - homepage
-- breadcrumbs
-- clean up css
-- clean sass
+#- breadcrumbs
+#- clean up css
+#- clean sass
 #- markup for images and caption
