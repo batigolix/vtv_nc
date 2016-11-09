@@ -6,7 +6,7 @@ Apply transformations to structured data to write output in different formats.
 
 ## Component Status
 
-Currently in use in [Robo](https://github.com/consolidation/Robo).
+Currently in use in [Robo](https://github.com/consolidation/Robo) (1.x+), [Drush](https://github.com/drush-ops/drush) (9.x+) and [Terminus](https://github.com/pantheon-systems/terminus) (1.x+).
 
 ## Motivation
 
@@ -106,6 +106,20 @@ function doFormat(
 {
     $formatterManager = new FormatterManager();
     $formatterManager->write(output, $format, $data, $options);
+}
+```
+The FormatterOptions class is used to hold the configuration for the command output--things such as the default field list for tabular output, and so on--and also the current user-selected options to use during rendering, which may be provided using a Symfony InputInterface object:
+```
+public function execute(InputInterface $input, OutputInterface $output)
+{
+    $options = new FormatterOptions();
+    $options
+      ->setInput($input)
+      ->setFieldLabels(['id' => 'ID', 'one' => 'First', 'two' => 'Second'])
+      ->setDefaultStringField('id');
+
+    $data = new RowsOfFields($this->getSomeData($input));
+    return $this->doFormat($output, $options->getFormat(), $data, $options);
 }
 ```
 ## Comparison to Existing Solutions

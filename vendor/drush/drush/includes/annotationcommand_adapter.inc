@@ -497,7 +497,7 @@ function annotationcommand_adapter_add_hook_options(&$command)
 function annotationcommand_adapter_command_names($command)
 {
   $names = array_merge(
-    [$command['name']],
+    [$command['command']],
     $command['aliases']
   );
   if (!empty($command['annotated-command-callback'])) {
@@ -726,6 +726,7 @@ function annotationcommand_adapter_call_validate_interface($names, $hooks, Comma
   $factory = annotationcommand_adapter_get_factory();
   $hookManager = $factory->hookManager();
 
+  $annotationData = $commandData->annotationData();
   $hooks = $hookManager->getHooks($names, $hooks, $annotationData);
 
   foreach ((array)$hooks as $hook) {
