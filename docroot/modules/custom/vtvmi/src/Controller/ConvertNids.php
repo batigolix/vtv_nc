@@ -22,7 +22,6 @@ class ConvertNids extends ControllerBase {
    */
   public function convert_nids() {
 
-
     // Fetches all nodes.
     $query = \Drupal::entityQuery('node');
     $nids = $query->execute();
@@ -31,7 +30,6 @@ class ConvertNids extends ControllerBase {
       if ($node->body) {
         $body = $node->body->value;
 
-
         // Replaces alternative domain names in urls.
         $body = str_replace("http://www.volkstheater-venlo.nl/nl/node", "http://www.volkstheater-venlo.nl/node", $body);
 
@@ -39,7 +37,6 @@ class ConvertNids extends ControllerBase {
         preg_match_all('/\"http:\/\/www\.volkstheater-venlo\.nl\/node\/\d+\"/', $body, $matches);
         if (count($matches[0]) > 1) {
           $save = TRUE;
-          kint($body);
           foreach ($matches[0] as $match) {
 
             // Fetches the NID from the match.
