@@ -113,14 +113,10 @@ main {
             @include linear-gradient(to bottom, #FF681F, #FE4C40);
           }
         }
-        &.menu-item--active-trail {
-
-        }
       }
     }
   }
 }
-
 
 h1, h2, h3, h4 {
   margin: 1em 0;
@@ -458,24 +454,23 @@ figure {
   overflow: hidden;
   margin: 1em 0;
   padding: 0;
-  &:hover {
-    figcaption {
-      opacity: 1;
-      left: 0;
-    }
-  }
   img {
     padding:2px;
     border:2px solid #FE4C40;
   }
-
+  &:hover {
+    figcaption {
+      opacity: 1;
+      left: 5px;
+    }
+  }
   figcaption {
     position: absolute;
     background: rgba(0, 0, 0, 0.75);
     color: white;
     padding: 10px 20px;
     opacity: 0;
-    bottom: 6px;
+    bottom: 10px;
     left: -30%;
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
